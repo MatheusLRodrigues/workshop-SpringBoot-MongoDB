@@ -22,7 +22,7 @@ public class PostService {
 	} 
 
 	public List<Post> findByTitle(String text){
-		return postRepo.findByTitleContaining(text);
+		return postRepo.searchTitle(text);
 	}
 	
 }
